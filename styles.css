@@ -1,0 +1,46 @@
+label:not(.radio-label), input:not([type="radio"]) { display: block;}
+input:focus, textarea:focus { border-color: blue; outline: none;}
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+input:valid:not(:placeholder-shown),
+textarea:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+button {background-color: green; color: white;
+width: 100%; 
+box-sizing: border-box;
+padding: 14px;
+font-size: 18px;}
+button:hover {background-color: black; color: white;}
+.radio-group input[type="radio"]:checked { border-color: green; box-shadow: 0 0 0 2px green;
+background-color: green; accent-color: teal;}
+.radio-group input[type="radio"]:checked + label {color: green}
+input:first-of-type {border-radius: 8px;}
+input {border-radius: 8px}
+textarea {border-radius: 8px;
+min-height: 120px;}
+input, select, textarea, fieldset { border-width: 2px;}
+.container {box-shadow: 0 2px 6px #ccc;
+padding: 24px;
+margin: 80px;}
+header {
+  text-align: center; 
+  font-family: Arial;
+  }
+  h1 {
+    padding-top: 24px;
+  }
+  input:not([type="radio"]),
+select,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px;
+}
+label {
+  font-weight: bold;
+}
